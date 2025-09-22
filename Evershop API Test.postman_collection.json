@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "d8acc0be-8bc5-4c91-9a32-b12b7cd4d362",
+		"name": "Evershop API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36794413"
+	},
+	"item": [
+		{
+			"name": "Search Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/earch?keyword=nike react&ajax=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"earch"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "nike react"
+						},
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Single Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/nike-react-infinity-run-flyknit-171?ajax=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"nike-react-infinity-run-flyknit-171"
+					],
+					"query": [
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Item to Cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const response = pm.response.json();\r",
+							"const cartId=response.data.cartId;\r",
+							"const cartItemId=response.data.item.uuid;\r",
+							"pm.environment.set(\"cartId\", cartId);\r",
+							"pm.environment.set(\"cartItemId\", cartItemId);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sku\":\"NJC44141-Purple-L\",\"qty\":\"4\"}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/cart/mine/items",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"cart",
+						"mine",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/cart?ajax=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"cart"
+					],
+					"query": [
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update(Increase) Item Quantity",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"qty\":1,\"action\":\"increase\"}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/cart/{{cartId}}/items/{{cartItemId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"cart",
+						"{{cartId}}",
+						"items",
+						"{{cartItemId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update(Decrease) Item Quantity Copy",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"qty\":1,\"action\":\"increase\"}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/cart/{{cartId}}/items/{{cartItemId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"cart",
+						"{{cartId}}",
+						"items",
+						"{{cartItemId}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
