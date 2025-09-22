@@ -1,14 +1,4 @@
-API Evershop Project
-
-
-
-
-
-
-
-
-
-
+### API Evershop Project
 This repository contains API testing work for the Evershop platform. It includes Postman collections, environments, test cases, and supporting documents for validating different API endpoints.
 
 📌 Project Overview
@@ -32,18 +22,18 @@ Performance and reliability are maintained
 
 🚀 How to Run
 
-Clone the repository:
+## Clone the repository:
 
 git clone https://github.com/prothoma-bd/api-evershop.git
 
 
-Open Postman and import the following:
+1. Open Postman and import the following:
 
-Evershop API Test.postman_collection.json
+2. Evershop API Test.postman_collection.json
 
-EvershopDemo.postman_environment.json
+3. EvershopDemo.postman_environment.json
 
-Run the collection manually or via Newman:
+4. Run the collection manually or via Newman:
 
 newman run "Evershop API Test.postman_collection.json" -e "EvershopDemo.postman_environment.json"
 
