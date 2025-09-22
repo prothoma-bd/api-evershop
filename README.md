@@ -69,9 +69,7 @@ Error handling scenarios
 📷 Screenshots & Reports
 All screenshots, screen recordings, and reports are stored in the Screen Shot/ directory.
 
-👩‍💻 Author
-Sabina Sultana
-
-📧 Email: sabina.prothoma@gmail.com
-
-🔗 LinkedIn
+## 👩‍💻 Author
+**Sabina Sultana**  
+📧 Email: [sabina.prothoma@gmail.com](mailto:sabina.prothoma@gmail.com)  
+🔗 LinkedIn: [https://www.linkedin.com/in/sabina-sultana-prothoma](https://www.linkedin.com/in/sabina-sultana-prothoma)
