@@ -37,30 +37,30 @@ Performance and reliability are maintained
 
 ## 🚀 How to Run
 
-Clone the repository:
+1. Clone the repository:
 
 git clone https://github.com/prothoma-bd/api-evershop.git
 
 
-Open Postman and import the following:
+2. Open Postman and import the following:
 
-Evershop API Test.postman_collection.json
+`Evershop API Test.postman_collection.json `
 
-EvershopDemo.postman_environment.json
+` EvershopDemo.postman_environment.json `
 
-Run the collection manually or via Newman:
+3. Run the collection manually or via Newman:
 
 newman run "Evershop API Test.postman_collection.json" -e "EvershopDemo.postman_environment.json"
 
 ## 🛠 Tools & Technologies
 
-Postman – for API test execution
+-Postman – for API test execution
 
-Newman – for CLI test runs
+-Newman – for CLI test runs
 
-JMeter (optional) – for performance testing
+-JMeter (optional) – for performance testing
 
-Git & GitHub – for version control
+-Git & GitHub – for version control
 
 ## ✅ Test Coverage
 
