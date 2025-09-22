@@ -35,19 +35,20 @@ Screenshot/ # Folder containing screenshots and recordings
 
 ## 🚀 How to Run
 1. Clone the repository:  
-```bash
 git clone https://github.com/prothoma-bd/api-evershop.git
-Open Postman and import:
+
+2. Open Postman and import:
 
 Evershop API Test.postman_collection.json
 
 EvershopDemo.postman_environment.json
 
-Run the collection manually or via Newman:
+3. Run the collection manually or via Newman:
 
 newman run "Evershop API Test.postman_collection.json" -e "EvershopDemo.postman_environment.json"
 
 🛠 Tools & Technologies
+
 Postman – for API test execution
 
 Newman – for CLI test runs
@@ -58,18 +59,19 @@ Git & GitHub – for version control
 
 ✅ Test Coverage
 
-Authentication & Authorization
+-Authentication & Authorization
 
-Product APIs
+-Product APIs
 
-Cart & Checkout APIs
+-Cart & Checkout APIs
 
-Error handling scenarios
+-Error handling scenarios
 
 📷 Screenshots & Reports
 All screenshots, screen recordings, and reports are stored in the Screen Shot/ directory.
 
 ## 👩‍💻 Author
-**Sabina Sultana**  
-📧 Email: [sabina.prothoma@gmail.com](mailto:sabina.prothoma@gmail.com)  
-🔗 LinkedIn: [https://www.linkedin.com/in/sabina-sultana-prothoma](https://www.linkedin.com/in/sabina-sultana-prothoma)
+Sabina Sultana
+📧 Email: sabina.prothoma@gmail.com
+
+🔗 LinkedIn: https://www.linkedin.com/in/sabina-sultana-prothoma
