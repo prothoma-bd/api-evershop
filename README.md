@@ -1,68 +1,62 @@
-### API Evershop Project
+# API Evershop Project
 
+![GitHub repo size](https://img.shields.io/github/repo-size/prothoma-bd/api-evershop?color=blue) 
+![GitHub last commit](https://img.shields.io/github/last-commit/prothoma-bd/api-evershop?color=green) 
+![GitHub issues](https://img.shields.io/github/issues/prothoma-bd/api-evershop) 
+![Postman](https://img.shields.io/badge/Postman-API%20Testing-orange) 
+![Git](https://img.shields.io/badge/Git-Version%20Control-red)
 
+This repository contains API testing work for the **Evershop** platform. It includes Postman collections, environments, test cases, and supporting documents for validating different API endpoints.
 
-
-
-
-
-
-
-
-This repository contains API testing work for the Evershop platform. It includes Postman collections, environments, test cases, and supporting documents for validating different API endpoints.
+---
 
 ## 📌 Project Overview
+The goal of this project is to test the APIs of the Evershop platform to ensure:  
+- Endpoints are working as expected  
+- Response codes and payloads are correct  
+- Edge cases and error handling are validated  
+- Performance and reliability are maintained  
 
-The goal of this project is to test the APIs of the Evershop platform to ensure:
-
-Endpoints are working as expected
-
-Response codes and payloads are correct
-
-Edge cases and error handling are validated
-
-Performance and reliability are maintained
+---
 
 ## 📂 Repository Structure
 
-├── Evershop API Test.postman_collection.json      # Postman collection with API requests
+Evershop API Test.postman_collection.json
 
-├── EvershopDemo.postman_environment.json          # Postman environment variables
+EvershopDemo.postman_environment.json
 
-├── Evershop Website.xlsx                          # Test cases and documentation
+Evershop Website.xlsx
 
-├── Project Week Assignment-01.docx                # Assignment documentation
+Project Week Assignment-01.docx
 
-├── Screen Shot/                                   # Screenshots & recordings
+Screenshot/ # Folder containing screenshots and recordings
+
+---
 
 ## 🚀 How to Run
-
-1. Clone the repository:
-
+1. Clone the repository:  
+```bash
 git clone https://github.com/prothoma-bd/api-evershop.git
+Open Postman and import:
 
+Evershop API Test.postman_collection.json
 
-2. Open Postman and import the following:
+EvershopDemo.postman_environment.json
 
-`Evershop API Test.postman_collection.json `
-
-` EvershopDemo.postman_environment.json `
-
-3. Run the collection manually or via Newman:
+Run the collection manually or via Newman:
 
 newman run "Evershop API Test.postman_collection.json" -e "EvershopDemo.postman_environment.json"
 
-## 🛠 Tools & Technologies
+🛠 Tools & Technologies
+Postman – for API test execution
 
--Postman – for API test execution
+Newman – for CLI test runs
 
--Newman – for CLI test runs
+JMeter (optional) – for performance testing
 
--JMeter (optional) – for performance testing
+Git & GitHub – for version control
 
--Git & GitHub – for version control
-
-## ✅ Test Coverage
+✅ Test Coverage
 
 Authentication & Authorization
 
@@ -72,12 +66,10 @@ Cart & Checkout APIs
 
 Error handling scenarios
 
-## 📷 Screenshots & Reports
-
+📷 Screenshots & Reports
 All screenshots, screen recordings, and reports are stored in the Screen Shot/ directory.
 
 👩‍💻 Author
-
 Sabina Sultana
 
 📧 Email: sabina.prothoma@gmail.com
